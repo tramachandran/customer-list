@@ -1,0 +1,52 @@
+{
+    "customers" : [
+        {
+            "id": 1,
+            "age": 29,
+            "name": "Fiana",
+            "gender": "Female"
+        },
+        {
+            "id": 2,
+            "age": 43,
+            "name": "Bruce",
+            "gender": "Male"
+        },
+        {
+            "id": 3,
+            "age": 24,
+            "name": "Krish",
+            "gender": "Male"
+        },
+        {
+            "id": 4,
+            "age": 39,
+            "name": "Benny",
+            "gender": "female"
+        },
+        {
+            "id": 5,
+            "age": 48,
+            "name": "Beulah",
+            "gender": "female"
+        }
+    ],
+    "address" : {
+        "1" : [
+            "Akash Nagar, Mahadevapura, Bangalore, Karntaka",
+            "Rajaji Street, Tirumangalam, Madurai, TamilNadu"
+        ],
+        "2" : [
+            "Rajaji Nagar, Mahalakshmi, Bangalore, Karntaka",
+            "Testing street, First Nagar, Madurai, TamilNadu"
+        ],
+        "3" : [
+        ],
+        "4" : [
+            "Akash Nagar, Mahadevapura, Bangalore, Karntaka",
+            "Rajaji Street, Tirumangalam, Madurai, TamilNadu"
+        ],
+        "5" : [
+        ]
+    }
+}
