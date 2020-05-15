@@ -23,7 +23,7 @@ class AddressList extends Component<Props, State> {
             <div className="addressList">
                 <h1>Address List</h1>
                 {
-                    addresses.forEach(element => {
+                    addresses.map(element => {
                         return <Address></Address>
                     })
                 }

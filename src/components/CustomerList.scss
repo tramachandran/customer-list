@@ -1,0 +1,20 @@
+div.customerList {
+    width: 50%;
+    min-width: 700px;
+    margin: 1vw;
+    div.listHeader {
+        border: 1px solid black;
+        font-weight: bold;
+    }
+    div.customer {
+        border: 1px solid black;
+        border-top: transparent;
+    }
+    span {
+        width: 25%;
+        display: inline-block;
+        &:first-child {
+            width: 50%;
+        }
+    }
+}

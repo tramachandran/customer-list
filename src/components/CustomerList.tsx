@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Customer from "./Customer";
 import CustomerType from "./CustomerInterface";
+import "./CustomerList.scss";
 
 interface Props {
     customers : CustomerType[]
@@ -20,6 +21,9 @@ class CustomerList extends Component<Props, State> {
 
     render() {
         const {customers} = this.props;
+        const content = customers.length > 0 ? customers.map(customer => {
+            return <Customer key={customer.id} customerData={customer}></Customer>
+        }) : null;
         return (
             <div className="customerList">
                 <h1>Customers List</h1>
@@ -29,9 +33,7 @@ class CustomerList extends Component<Props, State> {
                     <span>Sex</span>
                 </div>
                 {
-                    customers.forEach(customer => {
-                        return <Customer></Customer>
-                    })
+                    content 
                 }
             </div>
         )
