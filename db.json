@@ -35,15 +35,18 @@
         {
             "id": 1,
 	        "address"	: [
-                "Akash Nagar, Mahadevapura, Bangalore, Karntaka",
-                "Rajaji Street, Tirumangalam, Madurai, TamilNadu"
+                "No: 2, First Floor, Akash Nagar, Mahadevapura, Bangalore, Karnataka",
+                "103, Rajaji Street, Tirumangalam, Madurai, TamilNadu",
+                "No: 102, third floor, 13th main Street, Ramavaram, Chennai, TamilNadu",
             ]
         },
         {
             "id": 2,
 	        "address"	: [
-                "Chanakya Nagar, Rajani road, Bangalore, Karntaka",
-                "Tester Street, Chennai, TamilNadu"
+                "No: 78, floor no 3, Chanakya Nagar, Rajani road, Bangalore, Karnataka",
+                "No: 32, first floor, Tester Street, Chennai, TamilNadu",
+                "No: 8, 8th, floor , 13th main road, ramana Nagar, Bangalore, Karnataka",
+                "No: 2, 3rd floor, new main Street, Chennai, TamilNadu"
             ]
         },
         {
@@ -54,13 +57,14 @@
         {
             "id": 4,
 	        "address"	: [
-                "Maiyam Nagar, Bellendur, Bangalore, Karntaka",
-                "Roja Street, Ram Nagar, Coimbatore, TamilNadu"
+                "No: 8, 8th, floor ,Maiyam Nagar, Bellendur, Bangalore, Karnataka",
+                "No: 28, 4th, floor ,Roja Street, Ram Nagar, Coimbatore, TamilNadu"
             ]
         },
         {
             "id": 5,
 	        "address"	: [
+                "1232, 8th cross road, Akash Nagar, Mahadevapura, Bangalore, Karnataka"
             ]
         }
     ]

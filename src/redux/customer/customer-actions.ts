@@ -6,20 +6,20 @@ import { FETCH_CUSTOMERS_REQUEST,
 
 axios.defaults.baseURL = 'https://my-json-server.typicode.com/tramachandran/customer-list/';
 
-export const fetchUserRequest = () => {
+export const fetchCustomerRequest = () => {
     return {
         type: FETCH_CUSTOMERS_REQUEST
     }
 }
 
-export const fetchUserSuccess = (customers: any[]) => {
+export const fetchCustomerSuccess = (customers: any[]) => {
     return {
         type: FETCH_CUSTOMERS_SUCCESS,
         payload: customers
     }
 }
 
-export const fetchUserFailure = (errorMsg: string) => {
+export const fetchCustomerFailure = (errorMsg: string) => {
     return {
         type: FETCH_CUSTOMERS_FAILURE,
         payload: errorMsg
@@ -28,14 +28,14 @@ export const fetchUserFailure = (errorMsg: string) => {
 
 export const fetchCustomers = () => {
     return (dispatch: Function) => {
-        dispatch(fetchUserRequest());
+        dispatch(fetchCustomerRequest());
         axios.get(`customers`)
           .then(response => {
               const customers = response.data;
-              dispatch(fetchUserSuccess(customers));
+              dispatch(fetchCustomerSuccess(customers));
           }).catch((err) => {
             const errorMsg = err.message;
-            dispatch(fetchUserFailure(errorMsg));
+            dispatch(fetchCustomerFailure(errorMsg));
           })
     }
 }

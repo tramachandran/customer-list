@@ -1,24 +1,11 @@
 import React, { Component } from 'react'
 
-interface Props {
-    
-}
-interface State {
-    
-}
 
-class Address extends Component<Props, State> {
-    constructor(props: Props) {
-        super(props)
-    
-        this.state = {      
-        }
-    }
-
+class Address extends Component {
     render() {
         return (
             <div>
-                
+                {this.props.children}
             </div>
         )
     }

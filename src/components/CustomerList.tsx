@@ -32,7 +32,6 @@ function CustomerList(stateProps: any)  {
             </div>
         )
     }
-    
 }
 
 const mapStateToProps = (state: any, ownProps: any) => {

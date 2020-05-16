@@ -1,35 +1,58 @@
 import React, { Component } from 'react';
+import { connect } from "react-redux";
 import Address from './Address';
-import "./AddressList.scss"
+import "./AddressList.scss";
 
 interface Props {
-}
-interface State {
-    
+    addressData: any
 }
 
-class AddressList extends Component<Props, State> {
-    constructor(props: Props) {
-        super(props)
+class AddressList extends Component<Props> {
     
-        this.state = {
-             
-        }
-    }
+    addrList: string[] = [];
+    content: any;
+
     render() {
-        // const {addresses} = this.props;
-        // return (
-        //     <div className="addressList">
-        //         <h1>Address List</h1>
-        //         {
-        //             addresses.map(element => {
-        //                 return <Address></Address>
-        //             })
-        //         }
-        //     </div>
-        // )
-        return <div className="addressList"><h1>Address List</h1></div>
+        
+        const {addressData} = this.props;
+        const selectedCustomerId = addressData.selected_Customer_Id;
+        const addresses = addressData.address;
+        
+        if (selectedCustomerId) {
+            const selectedCustomerAddress = addresses.length > 0 ? addresses.filter((address: any) => {
+                return (selectedCustomerId === address.customerId)
+            }): [];
+            this.addrList = selectedCustomerAddress.length > 0 ? selectedCustomerAddress[0].addresses : [];
+        }
+        
+        if (!selectedCustomerId) {
+            return null;
+        } else if (addressData.is_address_loading) {
+            return <div><h2>Loading Addresses.....</h2></div>;
+        } else if (addressData.errorMsg !== '') {
+			return <div className="error"><h5>{addressData.errorMsg}</h5></div>;
+		} else {
+			const content = this.addrList.length > 0 ? this.addrList.map((address: any, index: number) => {
+				return <Address key={index}>{address}</Address>
+			}) : <span>No address available for this customer</span>;
+			return (
+				<div className="addressList">
+					<h2>All Addresses</h2>
+					<div className ="addresses">
+					{
+						content 
+					}
+					</div>
+				</div>
+			)
+		}
     }
 }
 
-export default AddressList
+const mapStateToProps = (state: any) => {
+    return {
+        addressData: state.address
+    }
+}
+
+export default connect(mapStateToProps)(AddressList);
