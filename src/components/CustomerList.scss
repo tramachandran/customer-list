@@ -1,7 +1,8 @@
 div.customerList {
-    width: 50%;
-    min-width: 700px;
-    margin: 1vw;
+    width: 100%;
+    padding: 0 2vw;
+    font-size: 1.2rem;
+    box-sizing: border-box;
     div.listHeader {
         border: 1px solid black;
         font-weight: bold;
@@ -9,6 +10,11 @@ div.customerList {
     div.customer {
         border: 1px solid black;
         border-top: transparent;
+        cursor: pointer;
+        &.selected {
+            background-color:#4CAF50;
+            color: white;
+        }
     }
     span {
         width: 25%;
@@ -16,5 +22,10 @@ div.customerList {
         &:first-child {
             width: 50%;
         }
+    }
+    @media screen and (min-width: 768px) {
+        width: 50%;
+        font-size: 1rem;
+        padding: 0 0.5vw;
     }
 }

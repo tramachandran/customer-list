@@ -22,31 +22,46 @@
             "id": 4,
             "age": 39,
             "name": "Benny",
-            "gender": "female"
+            "gender": "Male"
         },
         {
             "id": 5,
             "age": 48,
             "name": "Beulah",
-            "gender": "female"
+            "gender": "Female"
         }
     ],
-    "address" : {
-        "1" : [
-            "Akash Nagar, Mahadevapura, Bangalore, Karntaka",
-            "Rajaji Street, Tirumangalam, Madurai, TamilNadu"
-        ],
-        "2" : [
-            "Rajaji Nagar, Mahalakshmi, Bangalore, Karntaka",
-            "Testing street, First Nagar, Madurai, TamilNadu"
-        ],
-        "3" : [
-        ],
-        "4" : [
-            "Akash Nagar, Mahadevapura, Bangalore, Karntaka",
-            "Rajaji Street, Tirumangalam, Madurai, TamilNadu"
-        ],
-        "5" : [
-        ]
-    }
+    "address" : [
+        {
+            "id": 1,
+	        "address"	: [
+                "Akash Nagar, Mahadevapura, Bangalore, Karntaka",
+                "Rajaji Street, Tirumangalam, Madurai, TamilNadu"
+            ]
+        },
+        {
+            "id": 2,
+	        "address"	: [
+                "Chanakya Nagar, Rajani road, Bangalore, Karntaka",
+                "Tester Street, Chennai, TamilNadu"
+            ]
+        },
+        {
+            "id": 3,
+	        "address"	: [
+            ]
+        },
+        {
+            "id": 4,
+	        "address"	: [
+                "Maiyam Nagar, Bellendur, Bangalore, Karntaka",
+                "Roja Street, Ram Nagar, Coimbatore, TamilNadu"
+            ]
+        },
+        {
+            "id": 5,
+	        "address"	: [
+            ]
+        }
+    ]
 }

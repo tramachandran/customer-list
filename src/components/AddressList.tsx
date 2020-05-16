@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Address from './Address';
-
+import "./AddressList.scss"
 
 interface Props {
-    addresses: string[];
 }
 interface State {
     
@@ -18,17 +17,18 @@ class AddressList extends Component<Props, State> {
         }
     }
     render() {
-        const {addresses} = this.props;
-        return (
-            <div className="addressList">
-                <h1>Address List</h1>
-                {
-                    addresses.map(element => {
-                        return <Address></Address>
-                    })
-                }
-            </div>
-        )
+        // const {addresses} = this.props;
+        // return (
+        //     <div className="addressList">
+        //         <h1>Address List</h1>
+        //         {
+        //             addresses.map(element => {
+        //                 return <Address></Address>
+        //             })
+        //         }
+        //     </div>
+        // )
+        return <div className="addressList"><h1>Address List</h1></div>
     }
 }
 
