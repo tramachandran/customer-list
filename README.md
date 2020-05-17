@@ -19,11 +19,7 @@ This project deals with the listing of customers in a list and click on each row
 Mock APIs is hosted on "https://my-json-server.typicode.com/tramachandran/customer-list"
 and the sample data is available in db.json file....
 
-## Available Scripts
-
-In the project directory, you can run:
-
-###  To run the Application ---
+###  To run the Application
 
 Run `npm install` to install all required node packages required to run the application
 then
@@ -35,9 +31,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### Screenshots 
-The basic mysql DB design, 
-Application's desktop screen view and 
+### Screenshots
+The basic mysql DB design,
+Application's desktop screen view and
 mobile screen view is available inside screenshots folder
 
 
