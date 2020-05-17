@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from "react-redux";
 import { fetchCustomers } from "../redux";
 import Customer from "./Customer";
-import "./CustomerList.scss";
+import "./scss/CustomerList.scss";
 
 function CustomerList(stateProps: any)  {
     const {customersData, fetchCustomers} = stateProps;

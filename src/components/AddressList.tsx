@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import Address from './Address';
-import "./AddressList.scss";
+import "./scss/AddressList.scss";
 
 interface Props {
     addressData: any

@@ -15,6 +15,10 @@ div.customerList {
             background-color:#4CAF50;
             color: white;
         }
+        &:hover {
+            background-color: #a9bd3a;
+            color: white;
+        }
     }
     span {
         width: 25%;
