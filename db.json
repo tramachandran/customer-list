@@ -1,71 +1,141 @@
 {
-    "customers" : [
-        {
-            "id": 1,
-            "age": 29,
-            "name": "Fiana",
-            "gender": "Female"
-        },
-        {
-            "id": 2,
-            "age": 43,
-            "name": "Bruce",
-            "gender": "Male"
-        },
-        {
-            "id": 3,
-            "age": 24,
-            "name": "Krish",
-            "gender": "Male"
-        },
-        {
-            "id": 4,
-            "age": 39,
-            "name": "Benny",
-            "gender": "Male"
-        },
-        {
-            "id": 5,
-            "age": 48,
-            "name": "Beulah",
-            "gender": "Female"
-        }
-    ],
-    "address" : [
-        {
-            "id": 1,
-	        "address"	: [
-                "No: 2, First Floor, Akash Nagar, Mahadevapura, Bangalore, Karnataka",
-                "103, Rajaji Street, Tirumangalam, Madurai, TamilNadu",
-                "No: 102, third floor, 13th main Street, Ramavaram, Chennai, TamilNadu"
-            ]
-        },
-        {
-            "id": 2,
-	        "address"	: [
-                "No: 78, floor no 3, Chanakya Nagar, Rajani road, Bangalore, Karnataka",
-                "No: 32, first floor, Tester Street, Chennai, TamilNadu",
-                "No: 8, 8th, floor , 13th main road, ramana Nagar, Bangalore, Karnataka",
-                "No: 2, 3rd floor, new main Street, Chennai, TamilNadu"
-            ]
-        },
-        {
-            "id": 3,
-	        "address"	: [
-            ]
-        },
-        {
-            "id": 4,
-	        "address"	: [
-                "No: 8, 8th, floor ,Maiyam Nagar, Bellendur, Bangalore, Karnataka",
-                "No: 28, 4th, floor ,Roja Street, Ram Nagar, Coimbatore, TamilNadu"
-            ]
-        },
-        {
-            "id": 5,
-	        "address"	: [
-                "1232, 8th cross road, Akash Nagar, Mahadevapura, Bangalore, Karnataka"
-            ]
-        }
-    ]
+   "customers":[
+      {
+         "id":1,
+         "age":29,
+         "name":"Fiana",
+         "gender":"Female"
+      },
+      {
+         "id":2,
+         "age":43,
+         "name":"Bruce",
+         "gender":"Male"
+      },
+      {
+         "id":3,
+         "age":24,
+         "name":"Krish",
+         "gender":"Male"
+      },
+      {
+         "id":4,
+         "age":39,
+         "name":"Benny",
+         "gender":"Male"
+      },
+      {
+         "id":5,
+         "age":48,
+         "name":"Beulah",
+         "gender":"Female"
+      }
+   ],
+   "address":[
+      {
+         "id":1,
+         "address":[
+            "No: 2, First Floor, Akash Nagar, Mahadevapura, Bangalore, Karnataka",
+            "103, Rajaji Street, Tirumangalam, Madurai, TamilNadu",
+            "No: 102, third floor, 13th main Street, Ramavaram, Chennai, TamilNadu"
+         ]
+      },
+      {
+         "id":2,
+         "address":[
+            "No: 78, floor no 3, Chanakya Nagar, Rajani road, Bangalore, Karnataka",
+            "No: 32, first floor, Tester Street, Chennai, TamilNadu",
+            "No: 8, 8th, floor , 13th main road, ramana Nagar, Bangalore, Karnataka",
+            "No: 2, 3rd floor, new main Street, Chennai, TamilNadu"
+         ]
+      },
+      {
+         "id":3,
+         "address":[
+
+         ]
+      },
+      {
+         "id":4,
+         "address":[
+            "No: 8, 8th, floor ,Maiyam Nagar, Bellendur, Bangalore, Karnataka",
+            "No: 28, 4th, floor ,Roja Street, Ram Nagar, Coimbatore, TamilNadu"
+         ]
+      },
+      {
+         "id":5,
+         "address":[
+            "1232, 8th cross road, Akash Nagar, Mahadevapura, Bangalore, Karnataka"
+         ]
+      }
+   ],
+   "rules":[
+      {
+         "name":"Test 100",
+         "description":"2345",
+         "match":"all",
+         "conditions":[
+            {
+               "field":"age",
+               "operator":">=",
+               "value":27
+            },
+            {
+               "field":"rental-tenure",
+               "operator":"<=",
+               "value":12
+            }
+         ],
+         "id":1593171199622,
+         "createdby":"admin",
+         "updatedon":1593171299622
+      },
+      {
+         "name":"My rule",
+         "createdby":"admin",
+         "description":"This is my first Rule, this handles the data for all the order executed with item TV as part of it otherwise this rule will valuate to false.",
+         "match":"all",
+         "conditions":[
+            {
+               "field":"items",
+               "operator":"contains",
+               "value":[
+                  "TV",
+                  "SOFA"
+               ]
+            },
+            {
+               "field":"postal-code",
+               "operator":"in",
+               "value":"123224,5543223"
+            }
+         ],
+         "id":1593171406916
+      },
+      {
+         "name":"My new rule",
+         "createdby":"admin",
+         "description":"This is my new rule need to be executed for all the orders hereafter",
+         "match":"any",
+         "conditions":[
+            {
+               "field":"rental-amount",
+               "operator":">=",
+               "value":1000
+            },
+            {
+               "field":"age",
+               "operator":"<=",
+               "value":35
+            },
+            {
+               "field":"rental-tenure",
+               "operator":">=",
+               "value":6
+            }
+         ],
+         "id":1593171502875,
+         "updatedon":1593172902875
+      }
+   ]
 }
